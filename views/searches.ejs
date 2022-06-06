@@ -1,0 +1,32 @@
+<%- include('./partials/header'); %>
+    <!-- header -->
+    <body>
+      <%- include('./partials/menu'); %>
+      <div id = "container">
+      <%if (drinks) { 
+ 
+          drinks.forEach(drink=>{
+            // console.log(drink);
+            console.log(drink.drinkname);
+            console.log(drink.drinkimg);
+            console.log(drink.drinkcategory);
+            console.log(drink.drinkisalc);
+            console.log(drink.directions);%>
+            <div class="card">
+                <div id="cardHeader">
+                    <img src="<%-drink.drinkimg%>" class="card__image" id ="cardImage" width="600">
+                </div>
+                <div class="cardBody">
+                  <h4 id = 'cardTitle'><%-drink.drinkname%></h4>
+                  <p id = 'cardText1'><%-drink.drinkcategory%></p>
+                  <p id = 'cardText2'><%-drink.drinkisalc%></p>
+                  <p id = 'cardText3'><%-drink.directions%></p>
+                </div>
+              </div>
+            
+            <%})}%>
+          </div>
+    </body>
+</html>
+
+    

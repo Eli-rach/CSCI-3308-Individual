@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Individual Project</title>
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href = "./resources/css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <!-- header -->
+    <body>
+        <nav id = 'navBarMine'>
+            <a class="navBarItem" href="main">Home</a>
+            <a class="navBarItem" href="searches">Search History</a>
+        </nav>
+                
+
+        <!-- header done -->
+        <form>
+            <label for="Cocktail">Cocktail</label><br>
+            <input type="text" id="Cocktail" name="Cocktail"><br>
+        </form>
+
+        <button id = 'submitButton'>Search</button>
+
+        <div class="card">
+            <div id="cardHeader">
+                <!-- <img src="https://www.thecocktaildb.com/images/media/drink/rwqxrv1461866023.jpg" id =  class="card__image" width="600"> -->
+            </div>
+            <div class="cardBody">
+              <h4 id = 'cardTitle'></h4>
+              <p id = 'cardText1'></p>
+              <p id = 'cardText2'></p>
+              <p id = 'cardText3'></p>
+            </div>
+          </div>
+
+        <form action ="/save" method="POST">
+          <!-- <form action="/auth" method="post" class="form" id="login"></form> -->
+            <button>Save</button>
+        </form>
+          
+        <!-- footer -->
+        <script src="./resources/js/script.js"></script>
+        <!-- <script src="../../server.js"></script> -->
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<%- include('./partials/header'); %>
+    <body>
+      <%- include('./partials/menu'); %>
+                
+
+        <!-- header done -->
+        <form>
+            <label for="Cocktail">Cocktail</label><br>
+            <input type="text" id="Cocktail" name="Cocktail"><br>
+            
+        </form>
+
+        <button id = 'submitButton'>Search</button>
+        <form action ="/main" method="POST">
+        
+
+        <div class="card">
+          <label for="Img"> 
+            <div id="cardHeader">
+              
+                <!-- <img src="https://www.thecocktaildb.com/images/media/drink/rwqxrv1461866023.jpg" id =  class="card__image" width="600"> -->
+            </div>
+          </label>
+            <div class="cardBody">
+              <h4 id = 'cardTitle'></h4>
+              <p id = 'cardText1'></p>
+              <p id = 'cardText2'></p>
+              <p id = 'cardText3'></p>
+            </div>
+            <div class="card__footer">
+              <div class="user">
+                </div>
+              </div>
+            </div>
+          </div>
+
+       
+          <!-- <form action="/auth" method="post" class="form" id="login"></form> -->
+            <button>Save</button>
+        </form>
+          
+        <!-- footer -->
+        <!-- <script src="./resources/js/script.js"></script> -->
+    <%- include('./partials/footer'); %>
